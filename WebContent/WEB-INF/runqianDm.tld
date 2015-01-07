@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<!DOCTYPE taglib PUBLIC "-//Sun Microsystems, Inc.//DTD JSP Tag Library 1.1//EN"
+"http://java.sun.com/j2ee/dtds/web-jsptaglibrary_1_1.dtd">
+
+<taglib>
+  <tlibversion>1.0</tlibversion>
+  <jspversion>1.1</jspversion>
+  <shortname>Runqian Datamodel Tags</shortname>
+  <tag>
+    <name>olap</name>
+    <tagclass>com.raq.web.view.tag.OlapTag</tagclass>
+    <bodycontent>JSP</bodycontent>
+    <attribute>
+      <name>majFile</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    <attribute>
+      <name>drillDetailPage</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    <attribute>
+      <name>needFixedHeader</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    <attribute>
+      <name>needSetMtx</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    <attribute>
+      <name>filterStr</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    <attribute>
+      <name>exceptionPage</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    <!-- html or flash -->
+    <attribute>
+      <name>chartType</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+  </tag>
+  <tag>
+    <name>group</name>
+    <tagclass>com.raq.web.view.tag.GroupTag</tagclass>
+    <bodycontent>JSP</bodycontent>
+    <attribute>
+      <name>pajFile</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    <!-- html or flash -->
+    <attribute>
+      <name>chartType</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+  </tag>
+
+</taglib>

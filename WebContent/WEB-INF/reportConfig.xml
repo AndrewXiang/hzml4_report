@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/2002/xmlspec/dtd/2.10/xmlspec.dtd">
+<reportConfig>
+    <config>
+      <name>logConfig</name>
+      <value>/WEB-INF/runqianReportLog.properties</value>
+    </config>
+    <config>
+      <name>license</name>
+      <value>runqianWindowServer.lic</value>
+    </config>
+    <config>
+      <name>reportFileHome</name>
+      <value>/reportFiles</value>
+    </config>
+    <config>
+      <name>semanticsFile</name>
+      <value>/WEB-INF/runqianSemanticFile.xml</value>
+    </config>
+	<config>
+      <name>JNDIPrefix</name>
+      <value>java:comp/env</value>
+    </config>
+    <config>
+      <name>dataSource</name>
+      <value></value>
+    </config>
+	<config>
+      <name>jspCharset</name>
+      <value>GBK</value>
+    </config>
+	<config>
+      <name>alwaysReloadDefine</name>
+      <value>yes</value>
+    </config>
+    <config>
+      <name>cachedParamsTimeout</name>
+      <value>120</value>
+    </config>
+    <config>
+      <name>cachedReportDir</name>
+      <value>D:\Program Files\work\report\cached</value>
+    </config>
+    <config>
+      <name>cachedIdPrefix</name>
+      <value>A</value>
+    </config>
+    <config>
+      <name>cachedReportTimeout</name>
+      <value>120</value>
+    </config>
+    <config>
+      <name>maxCellNum</name>
+      <value>-1</value>
+    </config>
+    <config>
+      <name>maxConcurrentForReport</name>
+      <value>10</value>
+    </config>
+    <config>
+      <name>maxWaitForReport</name>
+      <value>10</value>
+    </config>
+    <config>
+      <name>maxWaitTimeForReport</name>
+      <value>30</value>
+    </config>
+    <config>
+      <name>appUrlPrefix</name>
+      <value></value>
+    </config>
+	<config>
+      <name>windir</name>
+      <value></value>
+    </config>
+    <config>
+      <name>errorPage</name>
+      <value>/myErrorPage.jsp</value>
+    </config>
+	    <config>
+      <name>webServerType</name>
+      <value></value>
+    </config>
+    <config>
+      <name>jreInstallName</name>
+      <value>/jre-6u24-windows-i586.exe#Version=1,6,0,0</value>
+    </config>
+    <config>
+      <name>jreVersion</name>
+      <value>1.6</value>
+    </config>
+    <config>
+      <name>clusterMember</name>
+      <value></value>
+    </config>
+    <config>
+      <name>isCachedFileShared</name>
+      <value></value>
+    </config>
+    <config>
+      <name>olapGraphProfile</name>
+      <value></value>
+    </config>
+    <config>
+      <name>olapDir</name>
+      <value></value>
+    </config>
+   <config> 
+      <name>numberFormatClass</name> 
+      <value></value> 
+   </config> 
+ <jdbc-ds-configs> 
+   <jdbc-ds-config>
+         <!-- 在设计器中设置的数据源名称 -->
+         <name>report</name>
+         <!-- 数据库类型 MySQL、MSSQL、Oracle等-->
+         <db-type>mysql</db-type>
+         <!-- 数据库连接设置 -->
+         <!--  本地数据库链接 -->
+         <connection-url>jdbc:mysql://127.0.0.1:3306/hzml2_report</connection-url>
+         <!-- OCC历史库数据库链接 -->
+         <!-- <connection-url>jdbc:mysql://10.17.70.3:3306/hzml2_report</connection-url> -->
+         <driver-class>com.mysql.jdbc.Driver</driver-class>
+         <user-name>dbo</user-name>
+         <password>dbo</password>
+         <!-- 字符集设置 -->
+         <db-charset>GBK</db-charset>
+         <client-charset>GBK</client-charset>
+         <extend-properties></extend-properties>
+      </jdbc-ds-config>
+    </jdbc-ds-configs>
+</reportConfig>
