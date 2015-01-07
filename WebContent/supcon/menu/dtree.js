@@ -1,7 +1,7 @@
 /*--------------------------------------------------|
 | dTree 2.05 | www.destroydrop.com/javascript/tree/ |
 |---------------------------------------------------|
-| Copyright (c) 2002-2003 Geir Landrö               |
+| Copyright (c) 2002-2003 Geir Landrï¿½              |
 |                                                   |
 | This script can be used freely as long as all     |
 | copyright messages are intact.                    |
@@ -30,31 +30,31 @@ function Node(id, pid, name, url, title, target, icon, iconOpen, open) {
 // Tree object
 function dTree(objName) {
 	this.config = {
-		target					: null,
+		target				: null,
 		folderLinks			: true,
 		useSelection		: true,
 		useCookies			: true,
-		useLines				: true,
-		useIcons				: true,
+		useLines			: true,
+		useIcons			: true,
 		useStatusText		: false,
-		closeSameLevel	: false,
-		inOrder					: false
-	}
+		closeSameLevel	    : false,
+		inOrder				: false
+	};
 	this.icon = {
 		root				: 'supcon/menu/img/base.gif',
-		folder			: 'supcon/menu/img/folder.gif',
-		folderOpen	: 'supcon/menu/img/folderopen.gif',
+		folder			    : 'supcon/menu/img/folder.gif',
+		folderOpen	        : 'supcon/menu/img/folderopen.gif',
 		node				: 'supcon/menu/img/page.gif',
 		empty				: 'supcon/menu/img/empty.gif',
 		line				: 'supcon/menu/img/line.gif',
 		join				: 'supcon/menu/img/join.gif',
-		joinBottom	: 'supcon/menu/img/joinbottom.gif',
+		joinBottom	        : 'supcon/menu/img/joinbottom.gif',
 		plus				: 'supcon/menu/img/plus.gif',
-		plusBottom	: 'supcon/menu/img/plusbottom.gif',
+		plusBottom	        : 'supcon/menu/img/plusbottom.gif',
 		minus				: 'supcon/menu/img/minus.gif',
-		minusBottom	: 'supcon/menu/img/minusbottom.gif',
-		nlPlus			: 'supcon/menu/img/nolines_plus.gif',
-		nlMinus			: 'supcon/menu/img/nolines_minus.gif'
+		minusBottom	        : 'supcon/menu/img/minusbottom.gif',
+		nlPlus			    : 'supcon/menu/img/nolines_plus.gif',
+		nlMinus			    : 'supcon/menu/img/nolines_minus.gif'
 	};
 	this.obj = objName;
 	this.aNodes = [];

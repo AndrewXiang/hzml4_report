@@ -69,7 +69,7 @@ Calendar.prototype.style = function(){
 	strStyle += ".calendarBottom li{float:left;height:20px;line-height:20px;font-weight:bold;text-align:center;}";
 	strStyle += "</style>";
 	return strStyle;
-}
+};
 
 /**
 //Classic Style
@@ -161,7 +161,7 @@ Date.prototype.format = function(style) {
     "w+" : "日一二三四五六".charAt(this.getDay()),   //week   
     "q+" : Math.floor((this.getMonth() + 3) / 3),  //quarter   
     "S"  : this.getMilliseconds() //millisecond   
-  }   
+  };   
   if(/(y+)/.test(style)) {   
 	style = style.replace(RegExp.$1, (this.getFullYear() + "").substr(4 - RegExp.$1.length));   
   }
@@ -194,7 +194,7 @@ Date.prototype.dateAdd = function(interval, number) {
 		return new Date(this.getFullYear(), this.getMonth(), 7 * number + this.getDate());
 		break;
 	}
-}
+};
 
 function checkDate(year, month, date){
 	var enddate = ["31", "28", "31", "30", "31", "30", "31", "31", "30", "31", "30", "31"];
@@ -626,7 +626,7 @@ Calendar.prototype.hide = function() {
   
 //Set Calendar Picker visible or invisible
 Calendar.prototype.setDisplayStyle = function(tagName, style) {   
-  var tags = this.getElementsByTagName(tagName)   
+  var tags = this.getElementsByTagName(tagName);   
   for(var i = 0; i < tags.length; i++) {   
     if (tagName.toLowerCase() == "select" && 
        (tags[i].name == "calendarYear" ||   
