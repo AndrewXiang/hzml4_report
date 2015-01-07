@@ -3,7 +3,7 @@
 <!-- 增加上面一行的目的:消除html元素带来的warnings -->
 <html>
 <head>
-	<title>杭州1号线报表子系统</title>
+	<title>杭州4号线报表子系统</title>
 	<script language="javascript" type="text/javascript">	 
 	function img1_onclick(id) {
 		var imgName=document.getElementById(id).src.replace(/.*\/([^\/]+)\..+/,'$1');
