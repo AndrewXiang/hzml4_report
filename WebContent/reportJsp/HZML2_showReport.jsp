@@ -3,15 +3,22 @@
 <!-- 增加上面一行的目的:消除html元素带来的warnings -->
 <html>
 <head>
-<link type="text/css" href="css/style.css" rel="stylesheet"/>
-<script type="text/javascript" src="../supcon/js/DatePicker.js"></script>
+  <link type="text/css" href="css/style.css" rel="stylesheet"/>
+  <script type="text/javascript" src="../supcon/js/DatePicker.js"></script>
 </head>
 <body topmargin=0 leftmargin=0 rightmargin=0 bottomMargin=0>
 <%
 	request.setCharacterEncoding( "GBK" );
 	String report = request.getParameter( "raq" );
 %>
-<!--toolbar begin-->
+
+<!--map begin-->
+<%@ include file="map.inc" %>
+<!--map end-->
+
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+
+<!-- toolbar begin -->
 <%	String appmap = request.getContextPath();
 	String printImage = "<img src='" + appmap + "/images/print.gif' border=no >";
 	String excelImage = "<img src='" + appmap + "/images/excel.gif' border=no >";
@@ -23,14 +30,6 @@
 	String prevPageImage = "<img src='" + appmap + "/images/prevpage.gif' border=no >";
 	String submitImage = "<img src='" + appmap + "/images/savedata.gif' border=no >";
 %>
-<!--toolbar end-->
-
-<!--map begin-->
-<%@ include file="map.inc" %>
-<!--map end-->
-
-<table border="0" width="100%" cellspacing="0" cellpadding="0">
-<!-- toolbar begin -->
 <tr>
   <td>
    <div class="btnBar">
@@ -48,6 +47,7 @@
   </td>
 </tr>
 <!-- toolbar end -->
+
 <!--title begin-->
 <%
 	String strTitle =  mapTitles.get(report)[0];
@@ -63,7 +63,5 @@
 <jsp:include page="<%=mapTitles.get(report)[1]%>" flush="false" />
 <!--context end-->
 </table>
-
-
 </body>
 </html>
