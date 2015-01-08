@@ -11,7 +11,6 @@
 	request.setCharacterEncoding( "GBK" );
 	String report = request.getParameter( "raq" );
 %>
-
 <!--toolbar begin-->
 <%	String appmap = request.getContextPath();
 	String printImage = "<img src='" + appmap + "/images/print.gif' border=no >";
@@ -24,27 +23,31 @@
 	String prevPageImage = "<img src='" + appmap + "/images/prevpage.gif' border=no >";
 	String submitImage = "<img src='" + appmap + "/images/savedata.gif' border=no >";
 %>
-<div class="btnBar">
-  <ul class="left">
-    <li class="toggleBg borderRight">
-      <ul class="fileOper">
-        <li><a class="ICOhover" href="#" onClick="report1_print();return false;"><span title="打印" class="print"></span></a></li>
-        <li><a class="ICOhover" href="#" onClick="report1_saveAsExcel();return false;"><span title="导出excel" class="excel"></span></a></li>
-        <li><a class="ICOhover" href="#" onClick="report1_saveAsPdf();return false;"><span title="导出pdf" class="pdf"></span></a></li>
-        <li><a class="ICOhover" href="#" onClick="report1_saveAsWord();return false;"><span title="导出word" class="word"></span></a></li>
-       </ul>
-    </li>    
-  </ul>
-</div>
 <!--toolbar end-->
 
 <!--map begin-->
 <%@ include file="map.inc" %>
 <!--map end-->
 
-<br>
 <table border="0" width="100%" cellspacing="0" cellpadding="0">
-
+<!-- toolbar begin -->
+<tr>
+  <td>
+   <div class="btnBar">
+    <ul class="left">
+      <li class="toggleBg borderRight">
+       <ul class="fileOper">
+          <li><a class="ICOhover" href="#" onClick="report1_print();return false;"><span title="打印" class="print"></span></a></li>
+          <li><a class="ICOhover" href="#" onClick="report1_saveAsExcel();return false;"><span title="导出excel" class="excel"></span></a></li>
+          <li><a class="ICOhover" href="#" onClick="report1_saveAsPdf();return false;"><span title="导出pdf" class="pdf"></span></a></li>
+          <li><a class="ICOhover" href="#" onClick="report1_saveAsWord();return false;"><span title="导出word" class="word"></span></a></li>
+        </ul>
+      </li>    
+    </ul>
+   </div>
+  </td>
+</tr>
+<!-- toolbar end -->
 <!--title begin-->
 <%
 	String strTitle =  mapTitles.get(report)[0];
