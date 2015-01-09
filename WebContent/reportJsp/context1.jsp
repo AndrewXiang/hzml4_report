@@ -20,7 +20,7 @@
 	String strStation = request.getParameter( "in_station" );
 	String strDate = request.getParameter( "in_date" );
 	String strTitle =  mapTitles.get(report)[0];
-	String strURL = "HZML2_showReport.jsp";
+	String strURL = "HZML4_showReport.jsp";
 	String strMode = "";
 	String strFunc = "";
 	boolean blError = false;
