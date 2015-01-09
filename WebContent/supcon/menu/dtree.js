@@ -171,7 +171,7 @@ dTree.prototype.indent = function(node, nodeId) {
 
 // Checks if a node has any children and if it is the last sibling
 dTree.prototype.setCS = function(node) {
-	var lastId;
+	var lastId=0;
 	for (var n=0; n<this.aNodes.length; n++) {
 		if (this.aNodes[n].pid == node.id) node._hc = true;
 		if (this.aNodes[n].pid == node.pid) lastId = this.aNodes[n].id;
@@ -215,7 +215,7 @@ dTree.prototype.o = function(id) {
 dTree.prototype.oAll = function(status) {
 	for (var n=0; n<this.aNodes.length; n++) {
 		if (this.aNodes[n]._hc && this.aNodes[n].pid != this.root.id) {
-			this.nodeStatus(status, n, this.aNodes[n]._ls)
+			this.nodeStatus(status, n, this.aNodes[n]._ls);
 			this.aNodes[n]._io = status;
 		}
 	}
@@ -251,7 +251,7 @@ dTree.prototype.closeLevel = function(node) {
 			this.closeAllChildren(this.aNodes[n]);
 		}
 	}
-}
+};
 
 // Closes all children of a node
 dTree.prototype.closeAllChildren = function(node) {
@@ -262,7 +262,7 @@ dTree.prototype.closeAllChildren = function(node) {
 			this.closeAllChildren(this.aNodes[n]);		
 		}
 	}
-}
+};
 
 // Change the status of a node(open or closed)
 dTree.prototype.nodeStatus = function(status, id, bottom) {
@@ -336,12 +336,12 @@ if (!Array.prototype.push) {
 		for(var i=0;i<arguments.length;i++)
 			this[this.length]=arguments[i];
 		return this.length;
-	}
+	};
 };
 if (!Array.prototype.pop) {
 	Array.prototype.pop = function array_pop() {
 		lastElement = this[this.length-1];
 		this.length = Math.max(this.length-1,0);
 		return lastElement;
-	}
+	};
 };
