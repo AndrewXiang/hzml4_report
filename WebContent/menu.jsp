@@ -127,10 +127,10 @@
 						d.add(6020301,60203,'日报','reportJsp/HZML4_showReport.jsp?raq=/4020301.raq','','main');
 						d.add(6020302,60203,'月报','reportJsp/HZML4_showReport.jsp?raq=/4020302.raq','','main');
 						d.add(6020303,60203,'年报','reportJsp/HZML4_showReport.jsp?raq=/4020303.raq','','main');
-					d.add(60204,602,'水系统','');
+					/* d.add(60204,602,'水系统','');
 						d.add(6020401,60204,'日报','reportJsp/HZML4_showReport.jsp?raq=/4020401.raq','','main');
 						d.add(6020402,60204,'月报','reportJsp/HZML4_showReport.jsp?raq=/4020402.raq','','main');
-						d.add(6020403,60204,'年报','reportJsp/HZML4_showReport.jsp?raq=/4020403.raq','','main');
+						d.add(6020403,60204,'年报','reportJsp/HZML4_showReport.jsp?raq=/4020403.raq','','main'); */
 				d.add(603,6,'故障报警统计','');
 					d.add(60301,603,'日报','reportJsp/HZML4_showReport.jsp?raq=/20501.raq','','main');
 					d.add(60302,603,'月报','reportJsp/HZML4_showReport.jsp?raq=/20502.raq','','main');
