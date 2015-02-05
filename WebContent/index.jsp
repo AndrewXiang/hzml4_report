@@ -9,8 +9,8 @@
 %> 
 <html>
 <frameset cols="250,10,*" id="topFrameSet" frameborder= "no" framespacing= "0">
-  <!-- <frame src="menu_test.jsp" name="menu"/>--><!--测试版使用 -->
-  <frame src="menu.jsp" name="menu"/><!-- 现场正式版使用 -->
+  <frame src="menu_test.jsp" name="menu"/><!--测试版使用 -->
+  <!-- <frame src="menu.jsp" name="menu"/> --><!-- 现场正式版使用 -->
   <frame src="sean.jsp" name="sean" scrolling="no" style="border-right:1px solid black;border-left:1px solid black;"/>
   <frame src="main.html" name="main"/>
 </frameset>
