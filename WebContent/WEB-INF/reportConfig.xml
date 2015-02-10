@@ -118,10 +118,10 @@
          <!-- 数据库连接设置 -->
          <!--  本地数据库链接 -->
          <!-- <connection-url>jdbc:mysql://127.0.0.1:3306/hzml2_report</connection-url> -->
-         <connection-url>jdbc:mysql://127.0.0.1:3306/hzml4_report</connection-url>
+         <!-- <connection-url>jdbc:mysql://127.0.0.1:3306/hzml4_report</connection-url> -->
          <!-- OCC历史库数据库链接 -->
          <!-- <connection-url>jdbc:mysql://10.17.70.3:3306/hzml2_report</connection-url> -->
-         <!-- <connection-url>jdbc:mysql://10.37.70.3:3306/hzml4_report</connection-url> -->
+         <connection-url>jdbc:mysql://10.37.70.3:3306/hzml4_report</connection-url>
          <driver-class>com.mysql.jdbc.Driver</driver-class>
          <user-name>dbo</user-name>
          <password>dbo</password>
